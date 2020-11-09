@@ -19,7 +19,7 @@
 > > ### CustomData -> 사용자의 활동에 따라 변하는 데이터 (ex) 검색 목록 저장등)
 > > > #### DataFrame().PutData(data : String)
 > > ### key값 찾기
-> > #### DataSet, CustomData에서 원하는 key값에 해당하는 Value를 찾아줌
+> > #### DataSet, CustomData에서 원하는 key값에 해당하는 Value들을 찾아줌 반환형은 [String]
 > > #### CustomData를 우선으로 찾음
 > > > #### DataFrame().FindData(filter: String)
 > ## 사용예
