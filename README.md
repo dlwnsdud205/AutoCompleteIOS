@@ -22,4 +22,5 @@
 > > #### DataSet, CustomData에서 원하는 key값에 해당하는 Value를 찾아줌
 > > #### CustomData를 우선으로 찾음
 > > > #### DataFrame().FindData(filter: String)
-> 
+> ## 사용예
+> > ### https://github.com/dlwnsdud205/AutoComplete/issues/1#issue-739038297
