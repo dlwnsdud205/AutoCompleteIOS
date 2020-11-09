@@ -8,6 +8,10 @@
 > ## 저장되는 데이터 구조
 > > ### DataSet { key : String! Value : String! } 
 > > ### CusomData { key : String! Value : String! User : Bool }
+> ## 초기 세팅
+> > ### CocoaPods 설치
+> > ### 사용할 프로젝트에 Realm설치
+> > ### 깃 폴더에서 DataStructure.swift 복붙
 > ## 사용법
 > > ### DataSet -> 사용자의 활동에 따라 변하지 않는 데이터 (초기 설정 데이터 저장)
 > > #### DataSet 초기 데이터 셋팅 하기
@@ -18,3 +22,4 @@
 > > #### DataSet, CustomData에서 원하는 key값에 해당하는 Value를 찾아줌
 > > #### CustomData를 우선으로 찾음
 > > > #### DataFrame().FindData(filter: String)
+> 
