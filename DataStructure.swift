@@ -62,6 +62,14 @@ class DataFrame{
         }
     }
     
+    func DeleteData(){
+        let Data = try! Realm()
+        let Custom = Data.objects(CustomData.self)
+        try! Data.write{
+            Data.delete(Custom)
+        }
+    }
+    
     // MARK: - Initial data
     // MARK: - Indexing
     func DataIndexing(data: String!) -> Array<[String: String]>{
