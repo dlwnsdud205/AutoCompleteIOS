@@ -91,8 +91,6 @@ class ViewController: UIViewController, UISearchBarDelegate{
     
     func MakeBtn(array : [String]){
         //InScroll.translatesAutoresizingMaskIntoConstraints = false
-        SetBottomView()
-        SetInScroll()
         print(array)
         let left_margin : CGFloat = ScrollView.layer.bounds.size.width / 2 -  ScrollView.layer.bounds.size.width / 4
         for i in 0..<BTNS.count{

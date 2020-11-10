@@ -22,23 +22,30 @@ class CustomData: Object{
 class DataFrame{
     
     func GetData(data: [String]) -> Void{
-        let Data = try! Realm()
-        try! Data.write{
-            Data.deleteAll()
-        }
+        var DataSize : CUnsignedLongLong = 0;
         for i in 0..<data.count{
-            var IndexingComplete = DataIndexing(data: data[i])
-            for j in 0..<IndexingComplete.count{
-                let dataset: DataSet = DataSet()
-                dataset.key = IndexingComplete[j][data[i]]
-                dataset.value = data[i]
-                let Data = try! Realm()
-                try! Data.write{
-                    Data.add(dataset)
+            DataSize = DataSize+UInt64(data[i].count)
+        }
+        if(DataSize != UserDefaults.standard.integer(forKey: "DataSize")){
+            let Data = try! Realm()
+            let dataset = Data.objects(DataSet.self)
+            try! Data.write{
+                Data.delete(dataset)
+            }
+            UserDefaults.standard.setValue(DataSize, forKey: "DataSize")
+            for i in 0..<data.count{
+                var IndexingComplete = DataIndexing(data: data[i])
+                for j in 0..<IndexingComplete.count{
+                    let dataset: DataSet = DataSet()
+                    dataset.key = IndexingComplete[j][data[i]]
+                    dataset.value = data[i]
+                    let Data = try! Realm()
+                    try! Data.write{
+                        Data.add(dataset)
+                    }
                 }
             }
         }
-        let dataset: DataSet = DataSet()
     }
     
     func PutData(data: String) -> Void{
