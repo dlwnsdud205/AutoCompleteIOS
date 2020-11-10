@@ -2,8 +2,12 @@
 ## 언어 : Swift
 ## Based on Realm
 
+---
+#### 데이터를 한글자씩 분류해서 [key:value]형태로 저장 
+---
+
 > ## 시간복잡도
-> > ### find 연산 = O(1)
+> > ### find = O(1)
 > > ### 데이터 구조 생성 = O(데이터 길이 * 데이터의 가장긴 문자열)
 > ## 저장되는 데이터 구조
 > > ### DataSet { key : String! Value : String! } 
