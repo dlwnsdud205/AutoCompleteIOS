@@ -6,7 +6,10 @@
 ### 데이터를 받으면 각 데이터를 분류해줌
 ### 음소가모여 음절이되는 언어인 한글도 분류할수있도록 음소단위로 끊어서 분리함
 ---
+### 사용예시
+<img src = "https://user-images.githubusercontent.com/62425964/98548099-753ccb00-22dc-11eb-8510-7da8e7a3cc60.jpeg" height="300px" width ="150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548113-78d05200-22dc-11eb-95c1-2827110cdeea.jpeg" height="300px" width ="150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548134-7cfc6f80-22dc-11eb-8574-ff7c542d781a.jpeg" height = "300px" width= "150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548156-81288d00-22dc-11eb-80f5-c180382e7a3e.jpeg" height = "300px" width= "150px"> </img>
 
+---
 > ## 시간복잡도
 > > ### find = O(쿼리의 value갯수)
 > > ### 데이터 구조 생성 = O(데이터 길이 * 데이터의 가장긴 문자열)
@@ -33,5 +36,3 @@
 > > ### Data삭제
 > > #### CustomData만 삭제해줌 (DataSet은 데이터 값이 변경되면 자동으로 업데이트함)
 > > > #### DataFrame().DeleteData()
-> ## 사용예
-> > ### <img src = "https://user-images.githubusercontent.com/62425964/98548099-753ccb00-22dc-11eb-8510-7da8e7a3cc60.jpeg" height="300px" width ="150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548113-78d05200-22dc-11eb-95c1-2827110cdeea.jpeg" height="300px" width ="150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548134-7cfc6f80-22dc-11eb-8574-ff7c542d781a.jpeg" height = "300px" width= "150px"> </img> <img src = "https://user-images.githubusercontent.com/62425964/98548156-81288d00-22dc-11eb-80f5-c180382e7a3e.jpeg" height = "300px" width= "150px"> </img>
