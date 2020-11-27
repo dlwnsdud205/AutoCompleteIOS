@@ -1,6 +1,6 @@
 # AutoComplete
 ## 언어 : Swift
-## Based on Realm
+## DB : Realm
 
 ---
 ### 데이터를 받으면 각 데이터를 분류해줌
